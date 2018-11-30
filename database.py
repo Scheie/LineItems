@@ -5,7 +5,7 @@ import pandas as pd
 connection = sqlite3.connect('sqlite.db')
 connection.execute("DROP TABLE IF EXISTS everything")
 
-location = r'C:\Users\Marcus\Desktop\starcom\data_case.csv'
+location = r'C:\Users\Marcus\Desktop\Project\data_case.csv'
 reader = pd.read_csv(location)
 
 c = connection.cursor()
